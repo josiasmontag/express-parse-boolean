@@ -1,7 +1,7 @@
 {
-  "name": "express-query-boolean",
+  "name": "express-parse-boolean",
   "version": "1.0.0",
-  "description": "Convert query strings to dates for express/connect applications.",
+  "description": "Convert query and body boolean strings to real booleans for express/connect applications.",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mariusc23/express-query-boolean.git"
+    "url": "https://github.com/josiasmontag/express-parse-boolean.git"
   },
   "keywords": [
     "express",
@@ -20,12 +20,12 @@
     "false",
     "boolean"
   ],
-  "author": "Marius Craciunoiu (http://www.mariusc23.com/)",
+  "author": "Marius Craciunoiu (http://www.mariusc23.com/), Josias Montag",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mariusc23/express-query-boolean/issues"
+    "url": "https://github.com/josiasmontag/express-parse-boolean/issues"
   },
-  "homepage": "https://github.com/mariusc23/express-query-boolean",
+  "homepage": "https://github.com/josiasmontag/express-parse-boolean",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-jshint": "^0.11.0",
