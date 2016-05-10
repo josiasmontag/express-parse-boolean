@@ -71,6 +71,21 @@ exports.parser = {
     test.done();
   },
 
+
+  null: function(test) {
+    test.deepEqual(
+      parser({
+        a: null
+      }),
+      {
+        a: null
+      },
+      'Doesn\'t convert null values.'
+    );
+
+    test.done();
+  },
+
   recursive: function(test) {
     test.deepEqual(
       parser({
