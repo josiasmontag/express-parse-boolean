@@ -42,14 +42,14 @@ console.log(req.query);
 #### Without
 ```js
 // <input name="b[c]" value="false"> 
-console.log(req.query);
+console.log(req.body);
 // => { b: { c: 'false' } }
 ```
 
 #### With
 ```js
 // <input name="b[c]" value="false"> 
-console.log(req.query);
+console.log(req.body);
 // => { b: { c: false } }
 ```
 
