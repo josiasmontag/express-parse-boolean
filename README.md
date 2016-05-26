@@ -1,7 +1,7 @@
 express-parse-boolean
 ==================
 
-> Convert query and body boolean strings to real booleans for express/connect applications.
+> Convert boolean strings to real booleans for express/connect applications.
 
 
 ## Installation
@@ -10,7 +10,7 @@ express-parse-boolean
 
 
 ## Getting Started
-The module will recursively attempt to parse every property in `req.query` and `req.body`.
+The module will recursively attempt to parse every property in `req.query` and `req.body` (if it is a `multipart/form-data` request).
 
 Load it right after `bodyParser` and other middlewares:
 
@@ -24,14 +24,14 @@ app.use(require('connect-multiparty'));
 app.use(boolParser());
 ```
 
-#### Without
+#### Query Paramters - Without
 ```js
 // ?a=true&b[c]=false
 console.log(req.query);
 // => { a: 'true', b: { c: 'false' } }
 ```
 
-#### With
+#### Query Paramters - With
 ```js
 // ?a=true&b[c]=false
 console.log(req.query);
@@ -39,14 +39,14 @@ console.log(req.query);
 ```
 
 
-#### Without
+#### Multipart Form Fields - Without
 ```js
 // <input name="b[c]" value="false"> 
 console.log(req.body);
 // => { b: { c: 'false' } }
 ```
 
-#### With
+#### Multipart Form Fields - With
 ```js
 // <input name="b[c]" value="false"> 
 console.log(req.body);
