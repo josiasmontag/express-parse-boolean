@@ -10,7 +10,7 @@ express-parse-boolean
 
 
 ## Getting Started
-The module will recursively attempt to parse every property in `req.query` and `req.body` (if it is a `multipart/form-data` request).
+The module will recursively attempt to parse every property in `req.query` and `req.body` (if it is a `multipart/form-data` or a `application/x-www-form-urlencoded` request).
 
 Load it right after `bodyParser` and other middlewares:
 
